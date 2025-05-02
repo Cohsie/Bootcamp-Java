@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="" method="POST">
+        <h3>Información personal</h3>
+        <label for="name">Nombre</label>
+        <input type="text" placeholder="Nombre">
+
+        <label for="apellido">Apellido</label>
+        <input type="text" placeholder="Apellido">
+
+        <label for="fechaNacimiento">Fecha de fechaNacimiento</label>
+        <input type="date" placeholder="Fecha de nacimiento">
+
+        <h3>Información de contacto</h3>
+        <label for="email">Email</label>
+        <input type="email" placeholder="Email" required>
+
+        <label for="Teléfono">Teléfono</label>
+        <input type="tel" placeholder="Nº de teléfono" required>
+
+        <label for="Dirección">Dirección</label>
+        <textarea name="direccion" id="direccionId" rows="5" cols="9"></textarea>
+
+        <h3>Información de cuenta</h3>
+        <label for="nombreUsuario">Nombre de usuario</label>
+        <input type="text" placeholder="Nombre de usuario" required>
+
+        <label for="contraseña">contraseña</label>
+        <input type="password" pattern="^(?=.*[A-Z])(?=.*[a-z])(?=.*\d){8,20}$" placeholder="Contraseña" required>
+
+
+        <h3>Preferencias</h3>
+        <label for="Color">Color favorito:</label>
+        <input type="color">
+
+        <label for="Permisos">Aceptar términos y condiciones</label>
+        <input type="checkbox">
+
+    </form>
+    
+</body>
+</html>
