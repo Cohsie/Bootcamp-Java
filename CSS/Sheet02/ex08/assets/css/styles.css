@@ -1,0 +1,12 @@
+.bounce-box {
+    width: 100px;
+    height: 100px;
+    background-color: lightgreen;
+    position: relative;
+    animation: animation 2s infinite;
+}
+
+@keyframes animation {
+    from {top: 0px;}
+    to{top: 20px;};
+}
