@@ -1,0 +1,13 @@
+body {
+    display: flex;
+}
+
+.sidebar {
+    background-color: gray;
+    padding: 100% 10%;
+    
+}
+
+.main-content {
+    margin-left: 20%;
+}
