@@ -1,0 +1,22 @@
+
+
+.grid-container {
+    background-color: gray;
+    margin: 10px;
+    gap: 10px;
+}
+
+.grid-item-large {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+
+    align-items: center;
+    grid-column: 1/2;
+}
+
+.grid-item {
+    grid-column: 1/4;
+
+}
+
+
