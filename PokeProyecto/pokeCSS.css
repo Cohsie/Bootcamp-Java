@@ -1,0 +1,130 @@
+body{
+    background-color: rgb(230, 230, 8);
+}
+/*HEADER*/
+header {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.negro1 {
+    position: fixed;
+    background-color: rgb(0, 0, 0);
+    width: 40px;
+    height: 40px;
+    transform: rotate(45deg);
+    top: -20px;
+    left: -20px;    
+}
+
+.negro2 {
+    background-color: black;
+    width: 40px;
+    height: 40px;
+    transform: rotate(45deg);
+    position: fixed;
+    top: -20px;
+    right: -20px;
+}
+
+
+/*MAIN*/
+.total {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 10px;
+    width: 70%;
+    margin-left: 15%;
+    gap: 30px;
+}
+
+.content{
+    box-shadow: 1px 1px 1px 1px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: white;
+}
+
+.content__arriba {
+    background-color: rgb(174, 174, 174);
+}
+
+.content__abajo {
+    background-color: white;
+    padding: 10%
+}
+
+img {
+    display: flex;
+    margin: auto
+}
+
+.pID {
+    color:brown;
+    background-color: rgb(184, 140, 140);
+    justify-content: left;
+    width: 23%;
+    margin-left: 2%;
+}
+
+p {
+    margin: 0;
+}
+
+.tipos{
+    display: flex;
+    gap: 5px;
+}
+
+.evo {
+    display: grid;
+    grid-template-columns: 0.1fr 0.5fr;
+    gap: 1px;
+    background-color: white;
+}
+
+.linea_vertical {
+    width:3px;
+    height: 100%;
+    background-color: black;
+
+}
+
+.evoluciona {
+    display: flex;
+    flex-direction: column;
+}
+
+.tipo {
+    border: solid 0.5px;
+    border-radius: 20%;
+    border-color: rgb(198, 65, 65);
+}
+/*FOOTER*/
+
+footer {
+    display: flex;
+}
+
+.rojo1 {
+    background-color: red;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;
+    position: fixed;
+    bottom: -40px;
+    left: -40px;
+}
+
+.rojo2 {
+    background-color: red;
+    width: 80px;
+    height: 80px;
+    border-radius: 100%;   
+    position: fixed;
+    bottom: -40px;
+    right: -40px;
+
+}
