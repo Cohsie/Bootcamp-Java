@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <main>
+        <form action="" method="POST">
+            <label for="name">Nombre</label>
+            <input type="text" placeholder="Nombre" required>
+
+            <label for="apellido">Apellidos</label>
+            <input type="text" placeholder="Apellidos" required>
+
+            <label for="email">Email</label>
+            <input type="text" placeholder="email" required><!--TODO: ver lo de válido-->
+
+            <label for="contraseña">Contraseña</label>
+            <input type="password" pattern="^{8,}$" placeholder="Contraseña" required>
+
+            <label for="telefono">Teléfono</label>
+            <input type="tel" placeholder="Teléfono" required>
+
+            <label for="fecha_nacimiento">Fecha de nacimiento</label>
+            <input type="text" placeholder="Fecha nacimiento" required>
+
+            <label for="Género">Género</label>
+            <select name="" id="">
+                <option value="opcion1">Hombre</option>
+                <option value="opcion2">Mujer</option>
+                <option value="opcion3">Helicóptero de combate</option>
+            </select>
+
+            <label for="acepto">Acepto los términos y condiciones</label>
+            <input type="checkbox" value="check">
+
+            <button type="submit">Enviar datos</button>
+
+        </form>
+    </main>
+</body>
+</html>
