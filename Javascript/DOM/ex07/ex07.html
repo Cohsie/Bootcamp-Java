@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="caja">Hola</div>
+    <div class="caja">Buenas</div>
+    <div class="caja">Saludos</div>
+    <button id="boton">Cambiar color</button>
+    <script>
+
+        const boton = document.getElementById('boton')
+        boton.addEventListener('click',()=> {
+            Array.from(document.getElementsByClassName('caja')).forEach(caja =>
+                {
+                    caja.style.background = 'yellow'
+                }
+            )
+        })
+
+    </script>
+</body>
+</html>

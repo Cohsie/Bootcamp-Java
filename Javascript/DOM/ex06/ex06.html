@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <button id="menos">Decrementar</button>
+    <button id="mas">Incrementar</button>
+
+    <p id="contador">0</p> <!-- Se agrega un id para mostrar el contador -->
+    
+    <script>
+        let counter = 0;
+        const menos = document.getElementById('menos');
+        const mas = document.getElementById('mas');
+        const contadorDisplay = document.getElementById('contador'); // Referencia al párrafo donde se mostrará el contador
+        
+        menos.addEventListener('click', () => {
+            counter = counter - 1;
+            contadorDisplay.textContent = counter; // Actualiza el contenido del párrafo
+        });
+        
+        mas.addEventListener('click', () => {
+            counter = counter + 1;
+            contadorDisplay.textContent = counter; // Actualiza el contenido del párrafo
+        });
+    </script>
+</body>
+</html>

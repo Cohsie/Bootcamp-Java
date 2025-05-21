@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Ejercicio 5</title>
+</head>
+
+<body>
+    <form id="formulario">
+        <input type="text" id="nombre" placeholder="Ingresa tu nombre">
+        <button type="submit">Enviar</button>
+        <p id="error" style="display: none;"></p>
+    </form>
+    <script>
+        const botoncillo = document.getElementsByTagName('button');
+        const errorcillo = document.getElementById('error');
+        const nombrecillo = document.getElementById('nombre');
+
+        botoncillo[0].addEventListener('click', (event) => {
+            event.preventDefault();  // Evitar que el formulario se envíe al hacer clic
+            if (nombrecillo.value === '') {
+                errorcillo.style.display = 'block';
+                errorcillo.textContent = 'Por favor, rellena el campo';
+            }
+        });
+    </script>
+</body>
+
+</html>
