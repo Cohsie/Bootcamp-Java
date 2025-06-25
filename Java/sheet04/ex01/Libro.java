@@ -30,8 +30,9 @@ public class Libro {
     void devolver() {
         if (prestado == true) {
             prestado = false;
+            System.out.println("Libro devuelto a la biblioteca.");
         } else {
-            System.out.println("El libro no está en prestado");
+            System.out.println("El libro no está en prestado.");
         }
     }
 
@@ -42,7 +43,10 @@ public class Libro {
 
     @Override
     public String toString() {
-        return "Libro{ título: "+titulo+" / número de páginas: "+num_paginas+" / autor: "+autor+
-        " / prestado: "+prestado;
-    } 
+        if(prestado == true) {
+            return "El libro "+ISBN+" con título "+titulo+" y autor "+autor+" tiene "+num_paginas+" páginas y está prestado."; 
+        } else {
+            return "El libro "+ISBN+" con título "+titulo+" y autor "+autor+" tiene "+num_paginas+" páginas y no está prestado."; 
+        }
+    }
 }
