@@ -22,14 +22,7 @@ public class Main {
 
         libro1.devolver();
         libro2.prestado();
+        libro1.imprimir(.98);
 
-    }
-
-    double imprimeLibro(){
-        Scanner teclado = new Scanner(System.in);
-        System.out.println("Dime el coste de impresión por página: ");
-        double coste = teclado.nextDouble();
-        teclado.close();
-        return coste;
     }
 }
